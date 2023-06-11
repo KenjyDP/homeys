@@ -1,0 +1,16 @@
+{
+    "rentals": [
+      {
+        "title": "Modern House",
+        "description": "A modern and cozy house",
+        "images": ["img/huis1/woonkamer1.jpg", "img/huis1/woonkamer2.jpg", "img/huis1/woonkamer3.jpg", "img/huis1/badkamer1.jpg",  "img/huis1/badkamer2.jpg", "img/huis1/bed1.jpg", "img/huis1/bed2.jpg", "img/huis1/dak1.jpg",  "img/huis1/dak2.jpg",  "img/huis1/kust1.jpg", "img/huis1/kust2.jpg",  "img/huis1/kust3.jpg"],
+        "detailsFile": "huis1.html"
+      },
+      {
+        "title": "Charming House",
+        "description": "Perfect for nature or beach enjoyers",
+        "images": ["img/huis2/woonkamer1.jpg", "img/huis2/woonkamer2.jpg", "img/huis2/badkamer.jpg", "img/huis2/bed1.jpg", "img/huis2/bed2.jpg", "img/huis2/kust1.jpg", "img/huis2/kust2.jpg", "img/huis2/kust3.jpg", "img/huis2/natuur1.jpg", "img/huis2/natuur2.jpg", "img/huis2/zwembad1.jpg", "img/huis2/zwembad2.jpg"],
+        "detailsFile": "huis2.html"
+      }
+    ]
+}
