@@ -1,0 +1,22 @@
+{
+  "title": "Modern House",
+  "location": "Orihuela Costa - Costa Blanca",
+  "price": "€350 per week, €1000 per month",
+  "numberOfPersons": "4",
+  "numberOfRooms": "Living room with open kitchen equipped with all comforts such as microwave, convection oven, dishwasher, washing machine, and dryer. 1 bedroom with a double bed, 1 bedroom with 2 single beds, 2 bathrooms with showers, washbasins, and toilets. Enclosed indoor terrace and large sunny rooftop terrace.",
+  "specialAmenities": "Communal pool located 20 meters from the apartment, accessible only to guests or owners (with a badge). Parking available in front of the apartment.",
+  "images": [
+    "img/huis1/woonkamer1.jpg",
+    "img/huis1/woonkamer2.jpg",
+    "img/huis1/woonkamer3.jpg",
+    "img/huis1/badkamer1.jpg",
+    "img/huis1/badkamer2.jpg",
+    "img/huis1/bed1.jpg",
+    "img/huis1/bed2.jpg",
+    "img/huis1/dak1.jpg",
+    "img/huis1/dak2.jpg",
+    "img/huis1/kust1.jpg",
+    "img/huis1/kust2.jpg",
+    "img/huis1/kust3.jpg"
+  ]
+}
