@@ -1,0 +1,18 @@
+[
+  {
+    "image": "img/huis1/woonkamer1.jpg",
+    "title": "Orihuela Costa – Costa Blanca",
+    "price": "350€/week - 1000€/month",
+    "people": "1 double bed - 2 single bed",
+    "description": "Living room with open kitchen equipped with all comforts such as microwave, convection oven, dishwasher, washing machine, and dryer, 1 bedroom with a double bed, 1 bedroom with 2 single beds, 2 bathrooms with showers, sink, and toilet, enclosed indoor terrace, and large sunny rooftop terrace.",
+    "detailsUrl": "huis1.html"
+  },
+  {
+    "image": "img/huis2/woonkamer1.jpg",
+    "title": "Orihuela Costa – Costa Blanca",
+    "price": "350€/week - 1000€/month",
+    "people": "1 double bed - 2 single bed",
+    "description": "Living room with open kitchen equipped with all comforts such as microwave, convection oven, dishwasher, washing machine, and dryer, 1 bedroom with a double bed, 1 bedroom with 2 single beds, 2 bathrooms with showers, sink, and toilet, enclosed indoor terrace, and large sunny rooftop terrace.",
+    "detailsUrl": "huis2.html"
+  }
+]
