@@ -1,0 +1,335 @@
+html,
+body {
+    background: linear-gradient(to bottom, #f0f0f0, #e5e5e5);
+    color: #000;
+    font-family: 'Righteous', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #939393;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b7b7b7;
+}
+
+nav {
+    backdrop-filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0.284);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+footer {
+    background-image: linear-gradient(15deg, #ffbe0a, #f83496);
+    height: 143px;
+}
+
+.bg-primary {
+    background-image: linear-gradient(15deg, #ffbe0a, #f83496);
+}
+
+.contactText {
+    border-radius: 15px;
+}
+
+.home-header {
+    background-image: url(../img/homeImage.jpg);
+}
+
+.contact-header {
+    height: 85.5vh;
+    background-image: url(../img/contactImage.png);
+}
+
+.contactContent {
+    background: linear-gradient(to bottom, #f0f0f0, #e5e5e5);
+    color: #000;
+    border-radius: 15px;
+    padding: 2rem;
+
+}
+
+.formMargin {
+    margin-bottom: 10px;
+}
+
+.py-11 {
+    padding-top: 0.2vh;
+}
+
+.py-6 {
+    padding-top: 7.6rem !important;
+    padding-bottom: 7.6rem !important;
+}
+
+.py-7 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+}
+
+.nav-img {
+    width: 144px;
+    height: 48px;
+}
+
+.homeBorder {
+    backdrop-filter: blur(50px);
+    background-color: rgba(46, 46, 46, 0.308);
+    border-radius: 15px;
+}
+
+.btn {
+    background-image: linear-gradient(65deg, #ffbe0a, #ffbe0a);
+    border: none;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #e7ab07;
+    background-image: linear-gradient(65deg, #f83496, #f83496);
+    transition: all 0.4s ease;
+}
+
+.btn:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+section {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 39.4vh;
+    object-fit: cover;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: none;
+    background-color: #d8d8d8;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardhome:active {
+    transform: scale(1.02);
+}
+
+.card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card:hover .card-body {
+    z-index: 2;
+}
+
+.card .card-body {
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card .card-body h5.card-title,
+.card .card-body p.card-text {
+    margin: 0;
+    text-align: center;
+    color: #000;
+}
+
+.card .card-body h5.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card .card-body p.card-text {
+    font-size: 0.9rem;
+}
+
+.card .card-img-top {
+    object-fit: cover;
+    height: 384px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.15);
+}
+
+.text-footer {
+    margin: 0;
+}
+
+@media (min-width: 440px) {
+    .container-sm,
+    .container {
+        max-width: 420px;
+    }
+    .py-11 {
+        padding-top: 3vh;
+    }
+}
+
+@media (min-width: 576px) {
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+    .py-11 {
+        padding-top: 3vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Adjust the height of contact-header for smaller screens */
+@media (max-width: 767px) {
+    .contact-header {
+      height: auto;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+  
+  /* Center align the contact form on smaller screens */
+  @media (max-width: 991px) {
+    .contact-form-wrapper {
+      position: static;
+      transform: none;
+      width: auto;
+    }
+  }
+  
+  /* Add padding to the form elements on smaller screens */
+  @media (max-width: 575px) {
+    .formMargin {
+      margin-bottom: 15p    x;
+    }
+  }
+  
+  /* Adjust the font size of form labels on smaller screens */
+  @media (max-width: 440px) {
+    .form-group h5 {
+      font-size: 1rem;
+    }
+  }
+
+  /* Adjust the height of header for smaller screens */
+  @media (max-height: 600px) {
+  .contact-header {
+      height: 500px;
+    }
+}
+
+/* Adjust the height of header for smaller screens */
+@media (max-height: 800px) {
+    .contact-header {
+        height: 1000px;
+      }
+  }

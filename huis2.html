@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Rental Details</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/homeysLogo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="nav-link" href="index.html">
+        <img src="img/homeysHeader.png" alt="Logo" class="nav-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="huur.html">Rentals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="section py-6">
+    <div class="container">
+      <div class="row">
+        <section class="section py-6">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title location"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <h5 class="card-title price"></h5>
+                      <p class="card-text price"></p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5 class="card-title persons"></h5>
+                      <p class="card-text persons"></p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5 class="card-title rooms"></h5>
+                      <p class="card-text rooms"></p>
+                    </li>
+                    <li class="list-group-item">
+                      <h5 class="card-title amenities"></h5>
+                      <p class="card-text amenities"></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <!-- Carousel images will be dynamically added here -->
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <div id="calendar"></div>
+  <div class="map text-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16545.203088357735!2d-0.7642696344658653!3d37.89902158160018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd630603aea171ad%3A0xcdea7fc495ea7764!2sDehesa%20de%20Campoamor%2C%20Alicante%2C%20Spain!5e1!3m2!1sen!2sbe!4v1685545400037!5m2!1sen!2sbe" width="600" height="450" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+  
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container d-flex align-items-center justify-content-center">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center py-3">
+      <p class="text-footer">&copy; Kenjy Depoorter | Webtechnieken Examen 2</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+  <script>
+    // Fetch JSON data
+    fetch('json/huis2.json')
+      .then(response => response.json())
+      .then(data => {
+        // Update location
+        const locationElement = document.querySelector('.card-title.location');
+        locationElement.textContent = data.location;
+
+        // Update price
+        const priceElement = document.querySelector('.card-title.price');
+        priceElement.textContent = 'Price';
+        const priceTextElement = document.querySelector('.card-text.price');
+        priceTextElement.textContent = data.price;
+
+        // Update number of persons
+        const personsElement = document.querySelector('.card-title.persons');
+        personsElement.textContent = 'Number of People';
+        const personsTextElement = document.querySelector('.card-text.persons');
+        personsTextElement.textContent = data.numberOfPersons;
+
+        // Update number of rooms
+        const roomsElement = document.querySelector('.card-title.rooms');
+        roomsElement.textContent = 'Number of Rooms';
+        const roomsTextElement = document.querySelector('.card-text.rooms');
+        roomsTextElement.textContent = data.numberOfRooms;
+
+        // Update special amenities
+        const amenitiesElement = document.querySelector('.card-title.amenities');
+        amenitiesElement.textContent = 'Special Amenities';
+        const amenitiesTextElement = document.querySelector('.card-text.amenities');
+        amenitiesTextElement.textContent = data.specialAmenities;
+
+        // Update carousel images
+        const carouselInner = document.querySelector('.carousel-inner');
+        data.images.forEach((image, index) => {
+          const carouselItem = document.createElement('div');
+          carouselItem.classList.add('carousel-item');
+          if (index === 0) {
+            carouselItem.classList.add('active');
+          }
+          const img = document.createElement('img');
+          img.src = image;
+          img.alt = 'Image ' + (index + 1);
+          img.classList.add('d-block', 'w-100');
+          carouselItem.appendChild(img);
+          carouselInner.appendChild(carouselItem);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
